@@ -2,122 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="css/output.css">
 
     <title>Frontend Mentor | Recipe page</title>
 </head>
-<body class="flex justify-center bg-stone-100 p-20">
-    <main class="w-[713px] flex flex-col gap-5 bg-white rounded-2xl p-8">
-        <header class="flex flex-col gap-5">
-            <img src="assets/images/image-omelette.jpeg" alt="Omelette" class="mx-auto rounded-xl">
+<body class="flex justify-center bg-[#f3e6d8] sm:p-20">
+    <main class="sm:w-[713px] flex flex-col bg-white sm:rounded-2xl">
+        <img src="assets/images/image-omelette.jpeg" alt="Omelette" class="sm:rounded-xl sm:mx-8 sm:mt-8">
+        
+        <div class="flex flex-col gap-6 m-8">
+            <header class="flex flex-col gap-3">
+                <h1 class="font-young-serif text-[#302d2c] text-[2.25rem] sm:text-[2.55rem]">Simple Omelette Recipe</h1>
+    
+                <p class="font-outfit text-[#302d2c]">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+            </header>
+    
+            <section class="font-outfit bg-rose-50 rounded-xl p-6">
+                <h3 class="text-[#7b284f] font-[700] mb-2">Preparation time</h3>
+    
+                <ul class="list-disc text-[#7b284f] font-[700] ml-6">
+                    <li class="mb-2">
+                        <div class="text-[#5f574e] ml-3">
+                            Total: <span class="font-normal">Approximately 10 minutes</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="text-[#5f574e] ml-3">
+                            Preparation: <span class="font-normal">5 minutes</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-[#5f574e] ml-3">
+                            Cooking: <span class="font-normal">5 minutes</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2 class="font-young-serif text-[#854632] text-2xl mb-3">Ingredients</h2>
 
-            <h1 class="text-[hsl(24,5%,18%)] text-[2.55rem] font-young-serif">Simple Omelette Recipe</h1>
+                <ul class="list-disc font-outfit text-[#854632] ml-6">
+                    <li class="mb-2"><div class="text-[#302d2c] ml-3">2-3 large eggs</div></li>
+                    <li class="mb-2"><div class="text-[#302d2c] ml-3">Salt, to taste</div></li>
+                    <li class="mb-2"><div class="text-[#302d2c] ml-3">Pepper, to taste</div></li>
+                    <li class="mb-2"><div class="text-[#302d2c] ml-3">1 tablespoon of butter or oil</div></li>
+                    <li><div class="text-[#302d2c] ml-3">Optional fillings: cheese, diced vegetables, cooked meats, herbs</div></li>
+                </ul>
+            </section>
+    
+            <hr class="text-[#e4ded8]">
+    
+            <section>
+                <h2 class="font-young-serif text-[#854632] text-2xl mb-3">Instructions</h2>
 
-            <p class="font-outfit text-[hsl(24,5%,18%)]">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-        </header>
-
-        <section class="bg-rose-50 rounded-xl font-outfit p-6">
-            <h3 class="text-rose-800 font-[700] mb-2">Preparation time</h3>
-
-            <ul class="list-disc text-rose-800 font-[700] ml-6">
-                <li class="mb-2">
-                    <div class="text-[hsl(30,10%,34%)] ml-3">
-                        Total: <span class="font-normal">Approximately 10 minutes</span>
-                    </div>
-                </li>
-                <li class="mb-2">
-                    <div class="text-[hsl(30,10%,34%)] ml-3">
-                        Preparation: <span class="font-normal">5 minutes</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="text-[hsl(30,10%,34%)] ml-3">
-                        Cooking: <span class="font-normal">5 minutes</span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2 class="text-[#854632] text-2xl font-young-serif mb-3">Ingredients</h2>
-            <ul class="list-disc font-outfit text-[#854632] ml-6">
-                <li class="mb-2"><span class="text-[hsl(24,5%,18%)] ml-3">2-3 large eggs</span></li>
-                <li class="mb-2"><span class="text-[hsl(24,5%,18%)] ml-3">Salt, to taste</span></li>
-                <li class="mb-2"><span class="text-[hsl(24,5%,18%)] ml-3">Pepper, to taste</span></li>
-                <li class="mb-2"><span class="text-[hsl(24,5%,18%)] ml-3">1 tablespoon of butter or oil</span></li>
-                <li><span class="text-[hsl(24,5%,18%)] ml-3">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
-            </ul>
-        </section>
-
-        <hr class="text-[hsl(30,18%,87%)]">
-
-        <section>
-            <h2 class="text-[#854632] text-2xl font-young-serif mb-3">Instructions</h2>
-            <ol class="list-decimal font-outfit text-[#854632] ml-5">
-                <li class="font-[600] mb-2">
-                    <div class="text-[hsl(24,5%,18%)] ml-3">
-                        Beat the eggs: <span class="font-[400]">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span>
-                    </div>
-                </li>
-                <li class="font-[600] mb-2">
-                    <div class="text-[hsl(24,5%,18%)] ml-3">
-                        Heat the pan: <span class="font-[400]">Place a non-stick frying pan over medium heat and add butter or oil.</span>
-                    </div>
-                </li>
-                <li class="font-[600] mb-2">
-                    <div class="text-[hsl(24,5%,18%)] ml-3">
-                        Cook the omelette: <span class="font-[400]">Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span>
-                    </div>
-                </li>
-                <li class="font-[600] mb-2">
-                    <div class="text-[hsl(24,5%,18%)] ml-3">
-                        Add fillings (optional): <span class="font-[400]">When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span>
-                    </div>
-                </li>
-                <li class="font-[600] mb-2">
-                    <div class="text-[hsl(24,5%,18%)] ml-3">
-                        Fold and serve: <span class="font-[400]">As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span>
-                    </div>
-                </li>
-                <li class="font-[600]">
-                    <div class="text-[hsl(24,5%,18%)] ml-3">
-                        Enjoy: <span class="font-[400]">Serve hot, with additional salt and pepper if needed.</span>
-                    </div>
-                </li>
-            </ol>
-        </section>
-
-        <hr class="text-[hsl(30,18%,87%)]">
-
-        <section class="font-outfit text-[hsl(24,5%,18%)]">
-            <h2 class="text-[#854632] text-2xl font-young-serif mb-3">Nutrition</h2>
-
-            <p class="mb-5">The table below shows nutritional values per serving without the additional fillings.</p>
-
-            <table class="w-full">
-                <tbody>
-                    <tr class="border-b-1 border-[hsl(30,18%,87%)]">
-                        <td class="w-1/2 pl-7 py-3">Calories</td>
-                        <td class="text-[#854632] font-[700]">277kcal</td>
-                    </tr>
-                    <tr class="border-b-1 border-[hsl(30,18%,87%)]">
-                        <td class="pw-1/2 pl-7 y-3">Carbs</td>
-                        <td class="text-[#854632] font-[700] py-3">0g</td>
-                    </tr>
-                    <tr class="border-b-1 border-[hsl(30,18%,87%)]">
-                        <td class="w-1/2 pl-7 py-3">Protein</td>
-                        <td class="text-[#854632] font-[700] py-3">20g</td>
-                    </tr>
-                    <tr class="border-b-1 border-[hsl(30,18%,87%)] py-3">
-                        <td class="w-1/2 pl-7 py-3">Fat</td>
-                        <td class="text-[#854632] font-[700] py-3">22g</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <ol class="list-decimal font-outfit text-[#854632] ml-5">
+                    <li class="font-[600] mb-2">
+                        <div class="text-[#302d2c] ml-3">
+                            Beat the eggs: <span class="font-[400]">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span>
+                        </div>
+                    </li>
+                    <li class="font-[600] mb-2">
+                        <div class="text-[#302d2c] ml-3">
+                            Heat the pan: <span class="font-[400]">Place a non-stick frying pan over medium heat and add butter or oil.</span>
+                        </div>
+                    </li>
+                    <li class="font-[600] mb-2">
+                        <div class="text-[#302d2c] ml-3">
+                            Cook the omelette: <span class="font-[400]">Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span>
+                        </div>
+                    </li>
+                    <li class="font-[600] mb-2">
+                        <div class="text-[#302d2c] ml-3">
+                            Add fillings (optional): <span class="font-[400]">When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span>
+                        </div>
+                    </li>
+                    <li class="font-[600] mb-2">
+                        <div class="text-[#302d2c] ml-3">
+                            Fold and serve: <span class="font-[400]">As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span>
+                        </div>
+                    </li>
+                    <li class="font-[600]">
+                        <div class="text-[#302d2c] ml-3">
+                            Enjoy: <span class="font-[400]">Serve hot, with additional salt and pepper if needed.</span>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+    
+            <hr class="text-[#e4ded8]">
+    
+            <section class="font-outfit text-[#302d2c]">
+                <h2 class="font-young-serif text-[#854632] text-2xl mb-3">Nutrition</h2>
+    
+                <p class="mb-3">The table below shows nutritional values per serving without the additional fillings.</p>
+    
+                <table class="w-full">
+                    <tbody>
+                        <tr class="border-b border-[#e4ded8]">
+                            <td class="pl-7 py-3">Calories</td>
+                            <td class="text-[#854632] font-[700] py-3">277kcal</td>
+                        </tr>
+                        <tr class="border-b border-[#e4ded8]">
+                            <td class="w-1/2 pl-7 py-3">Carbs</td>
+                            <td class="text-[#854632] font-[700] py-3">0g</td>
+                        </tr>
+                        <tr class="border-b border-[#e4ded8]">
+                            <td class="w-1/2 pl-7 py-3">Protein</td>
+                            <td class="text-[#854632] font-[700] py-3">20g</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/2 pl-7 py-3">Fat</td>
+                            <td class="text-[#854632] font-[700] py-3">22g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
 </body>
 </html>
